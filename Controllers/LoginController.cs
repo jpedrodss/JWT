@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using JWT.Contexts;
 using JWT.Domains;
+using JWT.Utils;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -33,6 +34,9 @@ namespace JWT.Controllers
 
         private Usuario AuthenticateUser(Usuario login)
         {
+
+            login.Senha = Crypto.Criptografar(login.Senha, login.Email.Substring(0, 4));
+
             return _context.Usuario
                 .Include(a => a.IdAcessoNavigation)
                 .FirstOrDefault(u => u.Email == login.Email && u.Senha == login.Senha);
