@@ -71,6 +71,8 @@ namespace JWT
 
             app.UseAuthorization();
 
+            app.UseStaticFiles();
+
             app.UseCors("CorsPolicy");
 
             app.UseEndpoints(endpoints =>
