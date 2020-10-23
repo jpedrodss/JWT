@@ -5,19 +5,38 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.8" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.8" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.8">
+    <Compile Remove="Migrations\20201023001136_InitialCreate.cs" />
+    <Compile Remove="Migrations\20201023001136_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20201023001240_AlterTableCategoria.cs" />
+    <Compile Remove="Migrations\20201023001240_AlterTableCategoria.Designer.cs" />
+    <Compile Remove="Migrations\20201023002059_AlterTableCategoria.cs" />
+    <Compile Remove="Migrations\20201023002059_AlterTableCategoria.Designer.cs" />
+    <Compile Remove="Migrations\20201023002214_AlterTableCategoria.cs" />
+    <Compile Remove="Migrations\20201023002214_AlterTableCategoria.Designer.cs" />
+    <Compile Remove="Migrations\20201023002626_AlterTableCategoria.cs" />
+    <Compile Remove="Migrations\20201023002626_AlterTableCategoria.Designer.cs" />
+    <Compile Remove="Migrations\20201023002801_InitialCreate.cs" />
+    <Compile Remove="Migrations\20201023002801_InitialCreate.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.9">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.8" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.8" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.8">
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.9">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwRoot\upload\imagens\" />
   </ItemGroup>
 
 
