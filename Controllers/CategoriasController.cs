@@ -14,7 +14,7 @@ namespace JWT.Controllers
      // Autorização para todos os métodos.
     [Route("api/[controller]")]
     [ApiController]
-    public class CategoriaController : ControllerBase
+    public class CategoriasController : ControllerBase
     {
         private NyousContext _context = new NyousContext();
 
