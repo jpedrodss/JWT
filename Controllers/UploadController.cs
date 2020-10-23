@@ -17,7 +17,6 @@ namespace JWT.Controllers
         {
             try
             {
-                //Verifico se foi enviado um arquivo com a imagem
                 if (arquivo != null)
                 {
                     var urlImagem = Upload.Local(arquivo);
@@ -32,8 +31,6 @@ namespace JWT.Controllers
             }
             catch (Exception ex)
             {
-                //Caso ocorra um erro retorna BadRequest com a mensagem
-                //de erro
                 return BadRequest(ex.Message);
             }
         }

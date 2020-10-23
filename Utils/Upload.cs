@@ -27,10 +27,10 @@ namespace JWT.Utils
             //Executo o comando de criação do arquivo no local informado
             file.CopyTo(streamImagem);
 
-            //Aws,Azure,Cloud Storage
+            //Aws, Azure, Cloud Storage
             //var urlImagem = Chamada ao método.Salvar(nomearquivo)
 
-            return "http://localhost:5000/upload/imagens/" + nomeArquivo;
+            return "http://localhost:44313/upload/imagens/" + nomeArquivo;
         }
     }
 }
